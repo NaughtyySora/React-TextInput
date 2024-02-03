@@ -7,5 +7,5 @@
 
 ## Component represents
 - Input label or/and childrens
-- all html input props and some custom
-- errors displaying
+- All html input props and some custom
+- Errors displaying
