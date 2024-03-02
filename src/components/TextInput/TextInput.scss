@@ -1,33 +1,41 @@
 .TextInput {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  
+  width: 100%;
+  max-width: 320px;
+
   &-input {
-    color: var(--white);
-    background-color: var(--gray_20);
+    color: var(--white_1);
+    background-color: var(--black_1);
     border: none;
     border-radius: 0.2rem;
     padding: 0.5rem 1.25rem;
     font-family: inherit;
-    font-size: var(--fSize16);
+    font-size: var(--fSize20);
+    min-height: 50px;
+    width: 100%;
+    max-width: 320px;
 
     &::placeholder {
-      color: var(--transparent_70);
+      color: var(--gray_1);
+      font-weight: 200;
+      font-style: italic;
+    }
+
+    &-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 320px;
     }
   }
 
-  &-input-wrap {
-    position: relative;
-  }
-
   &-label {
-    color: var(--white);
-    font-size: var(--fSize20);
+    color: var(--white_1);
+    font-size: var(--fSize16);
+    margin-bottom: 0.5rem;
+    display: block;
   }
 
   &-errors {
-    min-height: 25px;
+    height: 25px;
   }
 
   &-error {

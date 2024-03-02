@@ -7,7 +7,7 @@ const texts = {
   password: "Please enter a valid password",
   phone: "Please enter a valid phone number",
   currency: "Please enter a valid number",
-  length: ""
+  length: "Wrong input length"
 };
 
 export const useValidators = (list?: iValidators | undefined) => {

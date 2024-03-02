@@ -52,7 +52,7 @@ const length = (value: string, options = 8) =>
   ({ isValid: value.length <= options });
 
 const email = (email: string) =>
-  ({ isValid: !email.includes("@") ? { isValid: false } : reg(regexps.email, "u").test(email) });
+  ({ isValid: !email.includes("@") ? false : reg(regexps.email, "u").test(email) });
 
 const name = (value: string) =>
   ({ isValid: !reg(regexps.UnicodeLetters).test(value) && !reg(regexps.twoChars).test(value) && value.length >= 2 });
